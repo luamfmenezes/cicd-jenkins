@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  node-jenkins-server-example:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: node-jenkins-app-example
+    ports:
+      - "3333:3333"
