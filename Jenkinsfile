@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Back-end') {
             agent {
-                docker { image 'node:alpine' }
+                docker { image 'node:lts-alpine' }
             }
             steps {
                 sh 'nove -v'
